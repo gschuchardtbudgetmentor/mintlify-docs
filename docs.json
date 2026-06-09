@@ -11,8 +11,8 @@
   "navigation": {
     "dropdowns": [
       {
-        "dropdown": "NSF Budget Guide (Guide on PAPPG (NSF 24-1))",
-        "icon": "book-open-alt",
+        "dropdown": "NSF Proposal Guide --> Guide on PAPPG (NSF 24-1)",
+        "icon": "4",
         "color": {
           "light": "#30d5c8",
           "dark": "#30d5c8"
@@ -20,16 +20,89 @@
         "description": "An  easier way of understanding the guidelines of PAPPG (NSF 24-1)",
         "groups": [
           {
-            "group": "Sections of an NSF Budget (NSF PAPPG Guide)",
+            "group": "Sections of an NSF Grant",
             "icon": "0",
             "pages": [
+              "sections-of-an-nsf-grant",
+              "a-cover-sheet",
+              "b-project-summary",
+              "c-table-of-contents",
+              "d-project-description",
+              "e-references-cited",
               {
-                "group": "Example Group",
+                "group": "f. All the Sections of an NSF Proposal Budget",
                 "pages": [
+                  "f-budget-and-budget-justification-1",
                   {
-                    "group": "Example Group Nested",
-                    "pages": []
+                    "group": "(i) Salaries and Wages",
+                    "pages": [
+                      "a-senior-key-personnel-salaries-and-wages-policy",
+                      "b-administrative-and-clerical-salaries-and-wages-policy",
+                      "c-procedures",
+                      "d-confidential-budgetary-information"
+                    ]
+                  },
+                  "ii-fringe-benefits",
+                  "iii-equipment",
+                  {
+                    "group": "(iv) Travel",
+                    "pages": [
+                      "a-general",
+                      "b-domestic-travel",
+                      "c-foreign-travel"
+                    ]
+                  },
+                  "v-participant-support",
+                  {
+                    "group": "(vi) Other Direct Costs",
+                    "pages": [
+                      "a-materials-and-supplies",
+                      "b-publication-documentation-dissemination",
+                      "c-consultant-services",
+                      "d-computer-services",
+                      "e-subawards",
+                      "f-other"
+                    ]
+                  },
+                  "vii-total-direct-costs",
+                  "viii-indirect-costs",
+                  "ix-total-direct-and-indirect-costs",
+                  "x-fees",
+                  "xi-amount-of-this-request",
+                  {
+                    "group": "(xii) Cost Sharing",
+                    "pages": [
+                      "Voluntary-Committed-and-Uncommitted-Cost-Sharing",
+                      "Mandatory-Cost-Sharing"
+                    ]
+                  },
+                  {
+                    "group": "(xiii) Allowable and Unallowable Costs",
+                    "pages": [
+                      "a-entertainment",
+                      "b-meals-and-coffee-breaks",
+                      "c-alcoholic-beverages",
+                      "untitled-page",
+                      "e-prohibition-on-certain-telecommunications-and-video-surveillance-services-or-equipment"
+                    ]
                   }
+                ]
+              },
+              "g-facilities-equipment-and-other-resources",
+              {
+                "group": "h. Senior/Key Personnel Documents",
+                "pages": [
+                  "i-biographical-sketch-es",
+                  "ii-current-and-pending-other-support",
+                  "Collaborators-and-Other-Affiliations",
+                  "Synergistic-Activities"
+                ]
+              },
+              {
+                "group": "i. Special Information and Supplementary Documentation",
+                "pages": [
+                  "i-mentoring-plan-if-applicable",
+                  "Data-Management-and-Sharing-Plan"
                 ]
               }
             ]
@@ -37,7 +110,7 @@
         ]
       },
       {
-        "dropdown": "Untitled Dropdown",
+        "dropdown": "Getting Started with Mintlify Guide",
         "hidden": true,
         "global": {
           "anchors": [
@@ -65,7 +138,6 @@
               {
                 "group": "Get Started",
                 "pages": [
-                  "introduction",
                   "quickstart",
                   "development"
                 ]
