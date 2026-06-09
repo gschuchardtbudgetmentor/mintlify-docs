@@ -1,71 +1,424 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: "Quick Start Guide: Budget Mentor"
+description: "Budget Mentor helps research teams create, review, and export NSF-style budgets faster. This guide walks you through creating your first workspace, adding a budget, inviting collaborators, using AI support, and exporting your budget."
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+> **Disclaimer:** Budget Mentor may make mistakes. Program solicitations, institutional policies, and sponsor requirements may vary. Always review your budget with your institution’s sponsored programs office before submission.
 
-## Setting up
+## 1. Create Your Account
 
-The first step to world-class documentation is setting up your editing environments.
+To get started, visit:
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+[https://budgetmentor.com](https://budgetmentor.com)
 
-## Make it yours
+Click **Sign Up** and create an account using your email or Google login.
 
-Update your docs to your brand and add valuable content for the best user conversion.
+Once your account is created, you will be asked to create or join a workspace.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+---
+
+## 2. Create a Workspace
+
+A workspace is where your organization, lab, department, or consulting team manages budgets.
+
+Example workspace names:
+
+| Workspace Type | Example Name |
+| :-- | :-- |
+| University department | Biology Department |
+| Research lab | Smith Lab |
+| Consultant team | Grants Advisory Group |
+| Company | Acme Research LLC |
+
+To create a workspace:
+
+1. Click **Create Workspace**
+2. Enter your workspace name
+3. Add your organization name
+4. Choose your role
+5. Click **Continue**
+
+---
+
+## 3. Create Your First Budget
+
+After creating a workspace, click **New Budget**.
+
+You may be asked to enter:
+
+- Project title
+- Sponsor
+- Program type
+- Budget duration
+- Start date
+- End date
+- Principal Investigator
+- Organization
+
+Example:
+
+```text
+```
+
+```text
+Project Title: AI-Assisted NSF Budget Development
+Sponsor: National Science Foundation
+Budget Period: 3 years
+Start Date: 09/01/2026
+End Date: 08/31/2029
+Principal Investigator: Dr. Jane Smith
+Organization: Example University
+```
+
+---
+
+## 4. Add Senior Personnel
+
+Use the **Personnel** section to add the Principal Investigator, Co-PIs, faculty, researchers, and other key team members.
+
+Budget Mentor supports common NSF-style personnel fields, including:
+
+| Field | Description |
+| :-- | :-- |
+| Name | Person’s full name |
+| Role | PI, Co-PI, Senior Personnel, Researcher, etc. |
+| Calendar Months | Total calendar-month effort |
+| Academic Months | Academic-year effort |
+| Summer Months | Summer effort |
+| Base Salary | Institutional base salary |
+| Fringe Rate | Applicable fringe benefit rate |
+
+Example personnel entry:
+
+```text
+```
+
+```text
+{
+  "name": "Dr. Jane Smith",
+  "role": "Principal Investigator",
+  "calendarMonths": 1.2,
+  "academicMonths": 0,
+  "summerMonths": 1.2,
+  "baseSalary": 120000,
+  "fringeRate": 0.32
+}
+```
+
+---
+
+## 5. Add Budget Categories
+
+Budget Mentor helps organize common NSF budget categories.
+
+Typical categories include:
+
+- Senior Personnel
+- Other Personnel
+- Fringe Benefits
+- Equipment
+- Travel
+- Participant Support Costs
+- Materials and Supplies
+- Consultant Services
+- Computer Services
+- Subawards
+- Other Direct Costs
+- Indirect Costs\
+
+> **Tip:** If you are unsure where a cost belongs, add a note or comment for your sponsored programs office to review later.
+
+---
+
+## 6. Invite Collaborators
+
+You can invite team members to view, comment on, or edit a budget.
+
+Budget Mentor supports multiple roles:
+
+| Role | Best For | Permissions |
+| :-- | :-- | :-- |
+| Viewer | Department leadership, reviewers | View and export |
+| Commenter | Advisors, reviewers | View and comment |
+| Planner | Early-stage collaborators | Use planning tools |
+| Collaborator | Budget contributors | Edit budget inputs |
+| Owner | Admins and project leads | Manage budget, members, and billing |
+
+To invite a collaborator:
+
+1. \
+   Open the budget\
+2. \
+   Click **Share**\
+3. \
+   Enter the collaborator’s email\
+4. \
+   Choose a role\
+5. \
+   Click **Send Invite**\
+
+---
+
+## 7. Use Comments and Notes
+
+Use comments to ask questions, flag issues, or explain assumptions.
+
+Example comments:
+
+> “Please confirm whether this consultant rate is allowed under the solicitation.”
+
+> “Can we verify whether this equipment item should be excluded from indirect cost calculations?”
+
+> “This travel estimate assumes two domestic conferences per year.”
+
+---
+
+## 8. Use Budget Mentor AI
+
+Budget Mentor AI can help explain budget categories, flag missing information, and help draft budget justifications.
+
+Example questions you can ask:
+
+```text
+```
+
+```text
+Does this NSF budget appear to be missing any common categories?
+
+Please help me draft a short justification for domestic travel.
+
+Explain the difference between participant support costs and other direct costs.
+
+What should I check before exporting this to NSF format?
+```
+
+> **Important:** AI-generated answers should be reviewed by a human. Budget Mentor AI is designed to assist, not replace, institutional review.
+
+---
+
+## 9. Watch a Quick Tutorial
+
+Use this sample YouTube link to test video embed support in your help base:
+
+[Watch the Budget Mentor Quick Start Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+Some help base tools may automatically embed the video. Others may show it as a standard link.
+
+---
+
+## 10. Example Image
+
+Use this image placeholder to test how each help base handles images, captions, sizing, and alt text.
+
+_Caption: Example dashboard view showing budgets, collaborators, and workspace activity._
+
+---
+
+## 11. Budget Workflow Diagram
+
+Use this diagram to test Mermaid support.
+
+```text
+```
+
+---
+
+## 12. Export Your Budget
+
+When your budget is ready, go to the **Export** section.
+
+Budget Mentor may support exports such as:
+
+| Export Type | Use Case |
+| :-- | :-- |
+| NSF-style budget export | Sponsor submission preparation |
+| Excel export | Internal review |
+| PDF export | Sharing with leadership |
+| CSV export | Data analysis or import into another system |
+
+Before exporting, review:
+
+- \
+  Budget period dates\
+- \
+  Personnel effort\
+- \
+  Salary and fringe rates\
+- \
+  Equipment totals\
+- \
+  Travel assumptions\
+- \
+  Participant support costs\
+- \
+  Subaward entries\
+- \
+  Indirect cost rate\
+- \
+  Budget justification text\
+
+---
+
+## 13. Sample API or Data Export Format
+
+Use this code block to test syntax highlighting.
+
+```text
+```
+
+```javascript
+const budget = {
+  projectTitle: "AI-Assisted NSF Budget Development",
+  sponsor: "NSF",
+  budgetYears: 3,
+  directCosts: {
+    personnel: 185000,
+    fringe: 59200,
+    travel: 12000,
+    equipment: 25000,
+    materials: 8000
+  },
+  indirectCosts: {
+    rate: 0.5,
+    base: 264200,
+    total: 132100
+  },
+  totalBudget: 396300
+};
+
+console.log(`Total Budget: $${budget.totalBudget.toLocaleString()}`);
+```
+
+---
+
+## 14. Common Issues
+
+### I invited someone, but they cannot access the budget
+
+Check that:
+
+- \
+  The invite was sent to the correct email\
+- \
+  The collaborator accepted the invitation\
+- \
+  They are logged into the correct account\
+- \
+  Their workspace role allows access\
+- \
+  The budget was shared with them directly or through the workspace\
+
+---
+
+### My totals do not look right
+
+Review:
+
+- \
+  Salary base\
+- \
+  Effort months\
+- \
+  Fringe rate\
+- \
+  Indirect cost rate\
+- \
+  Exclusions from the indirect cost base\
+- \
+  Equipment classification\
+- \
+  Participant support cost treatment\
+- \
+  Subaward indirect cost rules\
+
+---
+
+### I am not sure where to put a cost
+
+Use comments or AI assistance to flag the issue. Then confirm with your institution’s sponsored programs office.
+
+Example:
+
+```text
+```
+
+```text
+I am not sure whether this item belongs under Materials and Supplies or Equipment. Please review before submission.
+```
+
+---
+
+## 15. Quick Checklist Before Submission
+
+-  Workspace created\
+-  Budget created\
+-  Project dates entered\
+-  Senior personnel added\
+-  Other personnel added\
+-  Fringe rates checked\
+-  Equipment reviewed\
+-  Travel assumptions documented\
+-  Participant support costs reviewed\
+-  Subawards added\
+-  Indirect cost rate confirmed\
+-  Budget justification drafted\
+-  Collaborators invited\
+-  Comments resolved\
+-  Export reviewed\
+-  Institutional approval received\
+
+---
+
+## 16. FAQ
+
+### Does Budget Mentor submit my proposal to NSF?
+
+No. Budget Mentor helps prepare and organize budget information. You should still follow your institution’s official submission process.
+
+### Can I collaborate with my team?
+
+Yes. You can invite collaborators with different roles, including Viewer, Commenter, Planner, Collaborator, and Owner.
+
+### Can Budget Mentor help with budget justifications?
+
+Yes. Budget Mentor AI can help draft and review budget justification language, but all AI-generated text should be reviewed before submission.
+
+### Can I export my budget?
+
+Yes. Budget Mentor is designed to help users export budget information for review, sharing, and sponsor preparation.
+
+### Is Budget Mentor a replacement for my sponsored programs office?
+
+No. Budget Mentor is a drafting and collaboration tool. Your sponsored programs office should still review your proposal before submission.
+
+---
+
+## 17. Support
+
+Need help?
+
+Email: [support@budgetmentor.com](mailto:support@budgetmentor.com)
+
+Website: [https://budgetmentor.com](https://budgetmentor.com)
+
+---
+
+## Test Elements Included in This Article
+
+This article includes several formatting and content types to help compare help base tools side by side:
+
+| Test Element | Included |
+| :-- | :-- |
+| Headings | Yes |
+| Tables | Yes |
+| Checklists | Yes |
+| Callouts | Yes |
+| YouTube link | Yes |
+| Image | Yes |
+| Code block | Yes |
+| JSON example | Yes |
+| JavaScript example | Yes |
+| Mermaid diagram | Yes |
+| FAQ section | Yes |
+| Email link | Yes |
+| External links | Yes |
