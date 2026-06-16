@@ -20,11 +20,11 @@
         "description": "An  easier way of understanding the guidelines of PAPPG (NSF 24-1)",
         "groups": [
           {
-            "group": "Sections of an NSF Grant",
-            "icon": "0",
+            "group": "NSF Grant Proposal Contents",
+            "icon": "book",
             "pages": [
               {
-                "group": "Single-Copy Documents (D.1)",
+                "group": "Single-Copy Documents",
                 "pages": [
                   "single-copy/a-authorization-to-deviate.mdx",
                   "single-copy/b-suggested-reviewers.mdx",
@@ -32,7 +32,8 @@
                   "single-copy/d-proposal-certifications-organization.mdx",
                   "single-copy/e-certifications-senior-key-personnel-v2.mdx",
                   "single-copy/f-former-nsf-staff.mdx"
-                ]
+                ],
+                "icon": "page"
               },
               "sections-of-an-nsf-grant.mdx",
               "a-cover-sheet.mdx",
